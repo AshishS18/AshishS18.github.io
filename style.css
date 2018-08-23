@@ -45,12 +45,42 @@ table {
 /*My Code*/
 body, head {
 	margin:0;
+	margin-left: 5%;
+	margin-right: 5%;
+	align-items: center;
 	height: 100%;
 	font-size: 16px;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	line-height: 1.8em;
 	color: #666; 
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background: #333;
+}
+
+#navbar {
+	width:1000px;
+	height: 70px;
+	border: 1px solid white;
+	float: right;
+}
+
+#navbar > li {
+	width:20%;
+	list-style: none;
+	float:left;
+}
+
+#navbar > li > a {
+	display: block;
+	color: white;
+	line-height: 80px;
+	text-align: center;
+	text-decoration: none; 
 }
 .img1, .img2, .img3{
 	position: relative;
@@ -88,11 +118,57 @@ body, head {
 
 .text {
 	position: absolute;
-	top:50%;
+	top:40%;
 	width:100%;
 	text-align: center;
 	color: #000;
 	font-size: 26px;
-	letter-spacing: 8px;
+	letter-spacing: 7px;
+	line-height: 30px;
 	text-transform: uppercase;
+}
+ .text .border {
+ 	background-color: #222;
+ 	color: ivory;
+ 	padding: 20px;
+ }
+
+.Tiles {
+	max-width: 1300px;
+	display: flex;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: grey;
+
+}
+
+.tile {
+	height: 200px;
+	width: 180px;
+	padding: 20px 20px;
+	margin:30px 10px 30px 10px;
+	line-height: 20px;
+	background-color: white;
+	color: grey;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+
+}
+ /* Media queries */
+
+ @media() {
+ 	
+ 	.img1, .img2, .img3 {
+ 		background-attachment: scroll;
+ 	} 
+
+ 	.Tiles {
+	display: flex;
+	flex-direction: column;
+
+
+}
 }
